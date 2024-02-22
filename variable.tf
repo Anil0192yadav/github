@@ -77,4 +77,11 @@ variable "creation_date" {
   default = "value"
 
 }
+variable "aws_lb_arn" {
+  description = "ARN of your LoadBalance that you want to attach with WAF.."
+}
+output "web_acl_arn" {
+  description = "The ARN of the WAF WebACL."
+  value       = aws_wafv2_web_acl.WafWebAcl.arn
+}
 
