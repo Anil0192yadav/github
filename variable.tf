@@ -2,7 +2,7 @@
 variable "aws_region" {
 description = "Region"
 type = string
- default     = "us-east-1"
+ default     = "ap-south-1"
 }
 
 variable "environment" {
@@ -13,14 +13,14 @@ variable "environment" {
 variable "aws_availability_zone" {
 description = "Availability Zone"
 type = string
- default     = "us-east-1a"
+ default     = "ap-south-1"
 }
 
 variable "aws_availability_zone2" {
 description = "Availability Zone2"
 type = string
 # default     = "ap-south-2b"
- default     = "us-east-1b"
+ default     = "ap-south-1"
 }
 
 /*variable "ec2_instance_count" {
@@ -33,9 +33,9 @@ type = number
 variable "ec2_ami_id" {
 description = "AMI ID"
 type = string
-#default     = "ami-0915bcb5fa77e4892"
+#default     = "ami-0449c34f967dbf18a"
 #default = "ami-046b3d63c4fe1b3cf" - hyd
-default = "ami-02396cdd13e9a1257"
+default = "ami-0449c34f967dbf18a"
 
 }
 
@@ -44,7 +44,7 @@ default = "ami-02396cdd13e9a1257"
 variable "ec2_instance_type" {
 description = "EC2 Instance Type"
 type = string
-default     = "t3.micro"
+default     = "t2.large"
 }
 
 variable "os_disk" {
@@ -77,3 +77,4 @@ variable "creation_date" {
   default = "value"
 
 }
+
